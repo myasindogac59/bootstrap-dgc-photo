@@ -7,6 +7,7 @@ pipeline {
                 sh 'pwd'
                 sh 'ls -la'
                 sh 'ls -ltr'
+                sh 'ifconfig'
             }
         }
     }
