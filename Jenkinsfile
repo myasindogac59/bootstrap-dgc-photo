@@ -6,7 +6,10 @@ pipeline {
                 sh 'whoami'
             }
         }
-        stage('Build')
-        echo "Build Aşaması"
+        stage('Build') {
+            steps {
+                echo "Build Aşaması"
+            }
+        }
     }
 }
