@@ -9,6 +9,7 @@ pipeline {
                 sh 'ls -ltr'
                 sh 'ifconfig'
                 sh 'uname -a'
+                sh 'ls l'
             }
         }
     }
