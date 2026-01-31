@@ -8,6 +8,7 @@ pipeline {
                 sh 'ls -la'
                 sh 'ls -ltr'
                 sh 'ifconfig'
+                sh 'uname -a'
             }
         }
     }
