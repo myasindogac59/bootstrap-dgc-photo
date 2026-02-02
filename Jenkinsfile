@@ -17,7 +17,9 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh 'docker --version'
+                sh '''
+                docker build -t myapp:${GIT_COMMIT} .
+                '''
             }
         }
         stage('Deploy') {
