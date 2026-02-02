@@ -17,9 +17,15 @@ pipeline {
         }
         stage('Build') {
             steps {
-                echo "Build Aşaması"
-                echo "${APP_NAME}"
-                echo "${ENV_NAME}"
+                sh 'docker --version'
+            }
+        }
+        stage('Deploy') {
+            when{
+                branch 'main'
+            }
+            steps{
+                echo 'deploy aşaması'
             }
         }
     }
