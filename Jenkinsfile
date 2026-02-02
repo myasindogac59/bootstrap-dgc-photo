@@ -27,7 +27,7 @@ pipeline {
                 branch 'main'
             }
             steps{
-                echo 'deploy aşamasi'
+                echo 'deploy'
             }
         }
     }
